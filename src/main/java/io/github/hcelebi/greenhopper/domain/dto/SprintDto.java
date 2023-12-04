@@ -21,7 +21,9 @@ public class SprintDto implements Serializable {
     private Integer linkedPagesCount;
     private String goal;
     private Integer sprintVersion;
+    @JsonDeserialize(using = CustomDateTimeDeserializer.class)
     private DateTime isoStartDate;
+    @JsonDeserialize(using = CustomDateTimeDeserializer.class)
     private DateTime isoEndDate;
     @JsonDeserialize(using = CustomDateTimeDeserializer.class)
     private DateTime isoCompleteDate;
