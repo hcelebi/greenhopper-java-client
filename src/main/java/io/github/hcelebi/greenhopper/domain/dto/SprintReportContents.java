@@ -18,4 +18,6 @@ public class SprintReportContents implements Serializable {
     private GenericValueTextDto issuesNotCompletedEstimateSum;
     private List<SprintReportIssue> completedIssues;
     private List<SprintReportIssue> issuesNotCompletedInCurrentSprint;
+    private List<SprintReportIssue> puntedIssues;
+    private List<SprintReportIssue> issuesCompletedInAnotherSprint;
 }
