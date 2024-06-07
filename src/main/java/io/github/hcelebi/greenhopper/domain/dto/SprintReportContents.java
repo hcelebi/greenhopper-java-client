@@ -5,6 +5,7 @@ import lombok.Data;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.List;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -15,4 +16,6 @@ public class SprintReportContents implements Serializable {
     private GenericValueTextDto completedIssuesEstimateSum;
     private GenericValueTextDto issuesNotCompletedInitialEstimateSum;
     private GenericValueTextDto issuesNotCompletedEstimateSum;
+    private List<SprintReportIssue> completedIssues;
+    private List<SprintReportIssue> issuesNotCompletedInCurrentSprint;
 }
